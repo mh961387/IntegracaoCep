@@ -1,0 +1,178 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 303
+  ClientWidth = 608
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 34
+    Top = 48
+    Width = 23
+    Height = 13
+    Caption = 'Cep:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 75
+    Width = 49
+    Height = 13
+    Caption = 'Endere'#231'o:'
+  end
+  object Label3: TLabel
+    Left = 25
+    Top = 102
+    Width = 32
+    Height = 13
+    Caption = 'Bairro:'
+  end
+  object Label4: TLabel
+    Left = 20
+    Top = 129
+    Width = 37
+    Height = 13
+    Caption = 'Estado:'
+  end
+  object Label5: TLabel
+    Left = 20
+    Top = 156
+    Width = 37
+    Height = 13
+    Caption = 'Cidade:'
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 8
+    Width = 79
+    Height = 23
+    Caption = 'Endere'#231'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 196
+    Width = 64
+    Height = 23
+    Caption = 'Contato'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 8
+    Top = 243
+    Width = 43
+    Height = 13
+    Caption = 'Fone 01:'
+  end
+  object Label9: TLabel
+    Left = 184
+    Top = 243
+    Width = 43
+    Height = 13
+    Caption = 'Fone 02:'
+  end
+  object Label10: TLabel
+    Left = 384
+    Top = 243
+    Width = 53
+    Height = 13
+    Caption = 'Whatsapp:'
+  end
+  object edtEndereco: TEdit
+    Left = 77
+    Top = 72
+    Width = 500
+    Height = 21
+    TabOrder = 0
+  end
+  object edtBairro: TEdit
+    Left = 77
+    Top = 99
+    Width = 180
+    Height = 21
+    TabOrder = 1
+  end
+  object cbxEstado: TComboBox
+    Left = 77
+    Top = 126
+    Width = 180
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object cbxCidade: TComboBox
+    Left = 77
+    Top = 153
+    Width = 180
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object edtmaskFone01: TMaskEdit
+    Left = 57
+    Top = 240
+    Width = 96
+    Height = 21
+    EditMask = '(00)00000-0000;1;_'
+    MaxLength = 14
+    TabOrder = 4
+    Text = '(  )     -    '
+  end
+  object edtMsk02: TMaskEdit
+    Left = 233
+    Top = 240
+    Width = 96
+    Height = 21
+    EditMask = '(00)00000-0000;1;_'
+    MaxLength = 14
+    TabOrder = 5
+    Text = '(  )     -    '
+  end
+  object edtMskWpp: TMaskEdit
+    Left = 443
+    Top = 240
+    Width = 96
+    Height = 21
+    EditMask = '(00)00000-0000;1;_'
+    MaxLength = 14
+    TabOrder = 6
+    Text = '(  )     -    '
+  end
+  object edtMskCep: TMaskEdit
+    Left = 77
+    Top = 45
+    Width = 93
+    Height = 21
+    EditMask = '00000-000;1;_'
+    MaxLength = 9
+    TabOrder = 7
+    Text = '     -   '
+    OnExit = edtMskCepExit
+  end
+  object Button1: TButton
+    Left = 525
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Pesquisar'
+    TabOrder = 8
+    OnClick = Button1Click
+  end
+end
